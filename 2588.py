@@ -1,0 +1,12 @@
+# https://www.acmicpc.net/problem/2588
+def main() :
+    a = int(input())
+    b = input()
+    print(a*int(b[2]))
+    print(a*int(b[1]))
+    print(a*int(b[0]))
+    print(a*int(b))
+
+
+if __name__=="__main__" :
+    main()
