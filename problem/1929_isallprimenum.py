@@ -6,8 +6,8 @@ def isprimenum(n) : ## Check Prime Num.
         remind = n%i
         if remind == 0 :
             return False
-    if n == 1 : False
-    return True    
+    if n <= 1 : False
+    return True
 
 ## Sieve of Eratosthenes 에라토스테네스의 체
 def isallprimenum(n) : ## n보다 작은 모든 소수 체크.
@@ -17,8 +17,8 @@ def isallprimenum(n) : ## n보다 작은 모든 소수 체크.
     primenum_check[1] = False ## 1은 소수가 아님.
 
     ## 2보다 크고 입력 n+1 보다 작은 모든 prime N 체크.
-    for i in range(2, int((n+1)**0.5)+1): ## (n+1)^0.5 보다 작은 수의 배수들만 확인하면 됨.
-        if primenum_check[i] == True: # i=2부터 시작해서 i가 True로 되어있으면 i의 배수를 전부 False로 바꿈
+    for i in range(2, int((n+1)**0.5)): ## (n+1)^0.5 보다 작은 수의 배수들만 확인하면 됨.
+        if primenum_check[i]: # i=2부터 시작해서 i가 True로 되어있으면 i의 배수를 전부 False로 바꿈
             for j in range(2*i, n+1, i):
                 primenum_check[j] = False
                 # print(num_check)
