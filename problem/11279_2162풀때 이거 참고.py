@@ -60,14 +60,11 @@
 import sys
 
 def main():
-    nodes = dict()
-    nets = dict()
-
     n, m = map(int, sys.stdin.readline().split())
-    for i in range(n):
-        nodes[i + 1] = i
-        nets[i] = [i + 1]
 
+    nodes = {i+1:i for i in range(n)}
+    nets = {i:[i+1] for i in range(n)}
+    
     for i in range(m):
         a, b = map(int, sys.stdin.readline().split())
 
