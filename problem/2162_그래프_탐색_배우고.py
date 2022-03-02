@@ -42,6 +42,7 @@ def main() :
     
     print(cross_num)
     # 여기서 부터 탐색 문제!!
+    # 2667, 11279 참조할 것!
     
 if __name__=="__main__" :
     main()
