@@ -29,6 +29,7 @@ import sys
 #             print(xy)
 #         print(xy//nm*n + x)
 
+## 마방진 채울 숫자 찾는 알고리즘과 같다?!
 def extended_gcd(a,b):
     ## ax + by = gcd(a,b)
     #init, a>b
